@@ -1,0 +1,40 @@
+Resposable de algun equipo? NO inicial desarrollo
+Clientes internos o externos? 
+Modalidad de trabajo ? mixta pero casi teletrabajo. guachipelin en escazu 
+cuants son ? 50 personas , en mi equipo: 3-4  3-4
+capacitacion ? 
+
+Idioma: no tan requerido.
+
+
+
+CR?
+Cuantr tenes?  portugues 
+metodologia ?
+
+software de versionamieno?
+
+Modenad de pago?
+dedops ramas 
+cubernate 
+
+Moneda local. 
+
+
+
+
+Emilia Jose Beteta Brenes <ebeteta@manpowergroup.com.mx>
+
+Javier Fernandez jfernandezc <jfernandezc@ufinet.com>,
+España  --
+
+Area de sistemas
+* Eduardo Mendez Salazar emendezs <emendezs@ufinet.com>,
+* Adam Villanueva Carvajal <avillanuevac@ufinet.com>
+
+
+
+Equipos lo das?
+
+que tipo de proyectos ? ejemplos ? 
+manejo apis   (interfaces)

@@ -1,0 +1,285 @@
+{
+	"info": {
+		"_postman_id": "5a422aa7-5e16-4c0d-9b39-bdbd486adaf5",
+		"name": "ufinet_test_Publish",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9674155"
+	},
+	"item": [
+		{
+			"name": "adminToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:9002/token",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "9002",
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adminGetClientes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Ihlvp9rBVB5A4NJc4MjXH2fAbabIl86iT_LkbmOkrquFRpx2vCdrQJf8Fz1ZBTovFZwRVpxsLGNDxihJMINajy3Lo-A2C9NScQa6Ziel6hEzv9eDWy9sTcAfdJ3R96PsBnpjwf1vdNTBhK1s4UTBx0pe-GHpjZBzWvomq3xbQG3GhGDAE85SlLwfObr9G5yEZ-v41LOfcPiJrOBNcgvUxj00SDkEYXOud6ISZBAQLQNhvcFo0weDzmrUudpDSBHzRW-ppeSlOe03E3TJ6sjlnF_W3BYDSd9jnfJCSqqVb82zKTxiQKSFVgUn9ht93sC_",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:9002/api/ms/getClientes",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "9002",
+					"path": [
+						"api",
+						"ms",
+						"getClientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adminGetCliente",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "75DQQQoNB4ft-deqMFPBefKxPSN93hZ6CnOLKiCiNJCvt0dZJoU30pi59R5FfqETkr5xc2_d7RWNuQw-FXHm-OYzd2wtwFbij32tKtYpHTD2JmD3mA9udhD49VmyjI7-tL-5sSZ7-OEyQEKjoqmWnevoUgaR7GG4-s_H3eKqSYsppaRXanUuYP2K8cXDg_U5N6cLhYRD6XXXPGt_zsWGMW9UlyhXYe8YXhJe8O2Jm4oW44JLdQUOVmirhr2oSFnZVb6IKdLuBl5IymyQrI8iEnUWCypk0CqOWag96twYCgqybPur1ehraABlfADxbWRU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:44360/api/ms/getCliente?id=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44360",
+					"path": [
+						"api",
+						"ms",
+						"getCliente"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adminInsertCliente",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "75DQQQoNB4ft-deqMFPBefKxPSN93hZ6CnOLKiCiNJCvt0dZJoU30pi59R5FfqETkr5xc2_d7RWNuQw-FXHm-OYzd2wtwFbij32tKtYpHTD2JmD3mA9udhD49VmyjI7-tL-5sSZ7-OEyQEKjoqmWnevoUgaR7GG4-s_H3eKqSYsppaRXanUuYP2K8cXDg_U5N6cLhYRD6XXXPGt_zsWGMW9UlyhXYe8YXhJe8O2Jm4oW44JLdQUOVmirhr2oSFnZVb6IKdLuBl5IymyQrI8iEnUWCypk0CqOWag96twYCgqybPur1ehraABlfADxbWRU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"ID\": \"3\",\r\n \"DocIdenticacion\":\"52156464\",\r\n \"Nombre\": \"Luis\",\r\n \"Apellidos\": \"Brenes\",\r\n \"Mail\": \"mbrenes@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44360/api/ms/InsertCliente",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44360",
+					"path": [
+						"api",
+						"ms",
+						"InsertCliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adminInsertFactura",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "dtSLz8TgBhQyhpzgxw6AiZdLTUCkI-FhT3nFRGkUvZrwOrUoO9j8obfGR8CajoygCv5zGeSx_W54kyCbC1KsLS8LMxqGNlzJqm9l-5Dc9pCfVzg55DdM1sux-_6b098LMVlW_ZpKKNoo-JK9ZVzXRuFn8OlBPoLcwrv28bfl2XxBOKZfKAqAEsqVSuZFJri85OoNUYMFyV0kgb4kF9TUMqRiFj40UJe-VNA_CB9G0iiCxwl9concG0z8FqHBBNTKGjZhmvDcitkOlVkUd90UVfYj3VWnA0v3nQz_yxo06-dSAUZkdccudLvGNn3BU7cw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"cliID\": \"1\",\r\n\"Tipo\": \"FAC\",\r\n\"Consecutivo\": \"000001\",\r\n\"Fecha\": \"2022-06-30 16:29:19.360\",\r\n\"SubTotal\": \"150000\",\r\n\"Impuesto\": \"19500\",\r\n\"Descuento\": \"0\",\r\n\"Total\": \"169500\",\r\n \"Detalle\":[{            \r\n            \"itemID\": \"1\",\r\n            \"Cantidad\": \"1\",\r\n            \"PrecioUnitario\":\"152000\",\r\n            \"SubTotal\": \"152000\",\r\n            \"Impuesto\": \"15985\",\r\n            \"Descuento\": \"0\",\r\n            \"Total\": \"168525\"\r\n            },\r\n            {            \r\n            \"itemID\": \"1\",\r\n            \"Cantidad\": \"1\",\r\n            \"PrecioUnitario\":\"152000\",\r\n            \"SubTotal\": \"152000\",\r\n            \"Impuesto\": \"15985\",\r\n            \"Descuento\": \"0\",\r\n            \"Total\": \"168525\"\r\n            }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44385/api/ms/doc/InsertFactura",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44385",
+					"path": [
+						"api",
+						"ms",
+						"doc",
+						"InsertFactura"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adminInsertFacturaP",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "dtSLz8TgBhQyhpzgxw6AiZdLTUCkI-FhT3nFRGkUvZrwOrUoO9j8obfGR8CajoygCv5zGeSx_W54kyCbC1KsLS8LMxqGNlzJqm9l-5Dc9pCfVzg55DdM1sux-_6b098LMVlW_ZpKKNoo-JK9ZVzXRuFn8OlBPoLcwrv28bfl2XxBOKZfKAqAEsqVSuZFJri85OoNUYMFyV0kgb4kF9TUMqRiFj40UJe-VNA_CB9G0iiCxwl9concG0z8FqHBBNTKGjZhmvDcitkOlVkUd90UVfYj3VWnA0v3nQz_yxo06-dSAUZkdccudLvGNn3BU7cw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"cliID\": \"1\",\r\n\"Tipo\": \"FAC\",\r\n\"Consecutivo\": \"000001\",\r\n\"Fecha\": \"2022-06-30 16:29:19.360\",\r\n\"SubTotal\": \"150000\",\r\n\"Impuesto\": \"19500\",\r\n\"Descuento\": \"0\",\r\n\"Total\": \"169500\",\r\n \"Detalle\":[{            \r\n            \"itemID\": \"1\",\r\n            \"Cantidad\": \"1\",\r\n            \"PrecioUnitario\":\"152000\",\r\n            \"SubTotal\": \"152000\",\r\n            \"Impuesto\": \"15985\",\r\n            \"Descuento\": \"0\",\r\n            \"Total\": \"168525\"\r\n            }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44385/api/ms/doc/InsertFactura",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44385",
+					"path": [
+						"api",
+						"ms",
+						"doc",
+						"InsertFactura"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

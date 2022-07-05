@@ -1,0 +1,10 @@
+Install-Package  -ProjectName ApiUsuario
+
+Install-Package Owin -ProjectName ApiUsuario
+Install-Package Microsoft.Owin.Security.OAuth -ProjectName ApiUsuario
+Install-Package Microsoft.Owin.Security.OAuth -ProjectName ApiUsuario
+Install-Package Microsoft.Owin.Security -ProjectName ApiUsuario
+Install-Package Microsoft.Owin.Host.SystemWeb -ProjectName ApiUsuario
+Install-Package Microsoft.Owin.Cors -ProjectName ApiUsuario
+Install-Package Microsoft.AspNet.Cors -ProjectName ApiUsuario
+Install-Package Microsoft.Owin -ProjectName ApiUsuario
